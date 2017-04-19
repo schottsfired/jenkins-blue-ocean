@@ -1,6 +1,9 @@
 default:
 	@echo $(PWD)
 
+network:
+	docker network create jenkins-blue-ocean
+
 jenkins:
 	docker run \
 	--name=jenkins-blue-ocean \
